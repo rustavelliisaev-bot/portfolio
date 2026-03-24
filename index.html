@@ -1,152 +1,58 @@
 <!DOCTYPE html>
-<html lang="ru" class="scroll-smooth">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rustam | Senior PHP Developer Portfolio</title>
+    <title>Личная страница | PHP Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .project-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-200 font-sans">
+<body class="gradient-bg text-slate-200 min-h-screen font-sans">
 
-    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
-                RUSTAM.DEV
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#projects" class="hover:text-blue-400 transition">Проекты</a>
-                <a href="#experience" class="hover:text-blue-400 transition">Опыт</a>
-                <a href="#contact" class="hover:text-blue-400 transition text-blue-500 font-bold underline decoration-2">Связаться</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="relative py-24 px-6 overflow-hidden">
-        <div class="max-w-4xl mx-auto text-center relative z-10">
-            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 text-blue-400 text-xs font-bold mb-4 border border-blue-500/20">
-                AVAILABLE FOR NEW PROJECTS
-            </span>
-            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-white">
-                Senior PHP <span class="text-blue-500">&</span> IT Architect
+    <div class="max-w-4xl mx-auto px-6 py-20">
+        <header class="mb-16">
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-4">
+                PHP Developer <span class="text-blue-500">&</span> Architect
             </h1>
-            <p class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed">
-                10+ лет опыта проектирования и разработки высоконагруженных систем для авиации, логистики и государственного сектора Узбекистана.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4 text-sm">
-                <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg italic">#Laravel</span>
-                <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg italic">#HighLoad</span>
-                <span class="bg-slate-900 border border-slate-800 px-4 py-2 rounded-lg italic">#API_Integrations</span>
+            <p class="text-xl text-slate-400">Частное портфолио и реализованные проекты.</p>
+        </header>
+
+        <section class="grid md:grid-cols-2 gap-6">
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500 transition">
+                <h3 class="text-white font-bold text-lg mb-2">Silk Avia</h3>
+                <p class="text-sm text-slate-400 mb-4">Разработка и поддержка авиационных систем.</p>
+                <a href="https://www.silk-avia.com/uz/" class="text-blue-400 text-xs font-bold uppercase">Смотреть проект →</a>
             </div>
-        </div>
-    </header>
 
-    <main id="projects" class="max-w-6xl mx-auto px-6 py-20">
-        <h2 class="text-3xl font-bold mb-16 flex items-center">
-            <span class="w-12 h-1 bg-blue-600 mr-4"></span> Портфолио проектов
-        </h2>
-
-        <div class="mb-16">
-            <h3 class="text-blue-500 font-bold mb-8 uppercase tracking-widest text-sm italic">Транспорт и Логистика</h3>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="project-card bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition shadow-xl">
-                    <h4 class="text-lg font-bold text-white mb-2">Silk Avia</h4>
-                    <p class="text-sm text-slate-400 mb-4">Разработка портала авиаперевозчика и систем бронирования.</p>
-                    <a href="https://www.silk-avia.com/uz/" target="_blank" class="text-xs text-blue-400 font-bold hover:underline">VISIT SITE <i class="fas fa-external-link-alt ml-1"></i></a>
-                </div>
-                <div class="project-card bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition shadow-xl">
-                    <h4 class="text-lg font-bold text-white mb-2">My Logistic</h4>
-                    <p class="text-sm text-slate-400 mb-4">Платформа для управления логистическими цепочками и грузами.</p>
-                    <a href="https://mylogistic.uz/" target="_blank" class="text-xs text-blue-400 font-bold hover:underline">VISIT SITE <i class="fas fa-external-link-alt ml-1"></i></a>
-                </div>
-                <div class="project-card bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition shadow-xl">
-                    <h4 class="text-lg font-bold text-white mb-2">TSAUTB</h4>
-                    <p class="text-sm text-slate-400 mb-4">Система обеспечения транспортной безопасности.</p>
-                    <a href="http://tsautb.uz/" target="_blank" class="text-xs text-blue-400 font-bold hover:underline">VISIT SITE <i class="fas fa-external-link-alt ml-1"></i></a>
-                </div>
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500 transition">
+                <h3 class="text-white font-bold text-lg mb-2">Styllight</h3>
+                <p class="text-sm text-slate-400 mb-4">E-commerce платформа для ритейла.</p>
+                <a href="https://styllight.ru/" class="text-blue-400 text-xs font-bold uppercase">Смотреть проект →</a>
             </div>
-        </div>
 
-        <div class="mb-16">
-            <h3 class="text-blue-500 font-bold mb-8 uppercase tracking-widest text-sm italic">E-commerce и Ритейл</h3>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="project-card bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition shadow-xl">
-                    <h4 class="text-lg font-bold text-white mb-2">Styllight</h4>
-                    <p class="text-sm text-slate-400 mb-4">Масштабируемый интернет-магазин одежды с умной фильтрацией.</p>
-                    <a href="https://styllight.ru/" target="_blank" class="text-xs text-blue-400 font-bold hover:underline">VISIT SITE <i class="fas fa-external-link-alt ml-1"></i></a>
-                </div>
-                <div class="project-card bg-slate-900 p-6 rounded-2xl border border-slate-800 hover:border-blue-500/50 transition shadow-xl">
-                    <h4 class="text-lg font-bold text-white mb-2">Timebit</h4>
-                    <p class="text-sm text-slate-400 mb-4">Ритейл-платформа электроники и аксессуаров.</p>
-                    <a href="https://timebit.ru/" target="_blank" class="text-xs text-blue-400 font-bold hover:underline">VISIT SITE <i class="fas fa-external-link-alt ml-1"></i></a>
-                </div>
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500 transition">
+                <h3 class="text-white font-bold text-lg mb-2">My Logistic</h3>
+                <p class="text-sm text-slate-400 mb-4">Управление логистическими процессами.</p>
+                <a href="https://mylogistic.uz/" class="text-blue-400 text-xs font-bold uppercase">Смотреть проект →</a>
             </div>
-        </div>
 
-        <div>
-            <h3 class="text-blue-500 font-bold mb-8 uppercase tracking-widest text-sm italic">Общественные и Научные проекты</h3>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="project-card bg-slate-900 p-5 rounded-2xl border border-slate-800 transition">
-                    <h4 class="text-white font-bold mb-1">KNGF.org</h4>
-                    <p class="text-xs text-slate-500 mb-3">Международный фонд.</p>
-                    <a href="https://kngf.org/" target="_blank" class="text-blue-500 text-xs font-bold">LINK</a>
-                </div>
-                <div class="project-card bg-slate-900 p-5 rounded-2xl border border-slate-800 transition">
-                    <h4 class="text-white font-bold mb-1">Imom Termiziy</h4>
-                    <p class="text-xs text-slate-500 mb-3">Научный центр.</p>
-                    <a href="http://imomtermiziy.uz/" target="_blank" class="text-blue-500 text-xs font-bold">LINK</a>
-                </div>
-                <div class="project-card bg-slate-900 p-5 rounded-2xl border border-slate-800 transition">
-                    <h4 class="text-white font-bold mb-1">SURSL.uz</h4>
-                    <p class="text-xs text-slate-500 mb-3">Союз ремесленников.</p>
-                    <a href="https://sursl.uz/" target="_blank" class="text-blue-500 text-xs font-bold">LINK</a>
-                </div>
-                <div class="project-card bg-slate-900 p-5 rounded-2xl border border-slate-800 transition">
-                    <h4 class="text-white font-bold mb-1">Vosart</h4>
-                    <p class="text-xs text-slate-500 mb-3">Креативное агентство.</p>
-                    <a href="https://vosart.com/" target="_blank" class="text-blue-500 text-xs font-bold">LINK</a>
-                </div>
+            <div class="p-6 rounded-2xl bg-slate-900/50 border border-slate-800 hover:border-blue-500 transition">
+                <h3 class="text-white font-bold text-lg mb-2">Vosart</h3>
+                <p class="text-sm text-slate-400 mb-4">Креативные решения и веб-сервисы.</p>
+                <a href="https://vosart.com/" class="text-blue-400 text-xs font-bold uppercase">Смотреть проект →</a>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <section id="experience" class="bg-slate-900/50 py-20 px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl font-bold mb-12 text-center text-white">Технические навыки</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h4 class="text-blue-400 font-bold mb-4 italic underline decoration-1">Backend & Architecture</h4>
-                    <ul class="space-y-3 text-slate-400">
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> PHP 8.3 / Laravel 11 / Symfony</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> PostgreSQL, MySQL, Redis</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Архитектура микросервисов и API</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-blue-400 font-bold mb-4 italic underline decoration-1">Integrations & DevOps</h4>
-                    <ul class="space-y-3 text-slate-400">
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Интеграция с One-ID, Billing (Payme/Click)</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Docker / Git / CI/CD Pipelines</li>
-                        <li><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Оптимизация высоконагруженных БД</li>
-                    </ul>
-                </div>
+        <footer class="mt-20 pt-10 border-t border-slate-800 text-center">
+            <p class="text-slate-500 mb-4 text-sm">Готов к обсуждению новых частных заказов и архитектурных решений.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-slate-400 hover:text-white transition">GitHub</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Telegram</a>
             </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="py-20 text-center border-t border-slate-900">
-        <h2 class="text-2xl font-bold mb-6 text-white italic">Обсудим ваш следующий проект?</h2>
-        <p class="text-slate-500 mb-8">Готов к сотрудничеству в разработке сложных инфраструктурных решений.</p>
-        <div class="flex justify-center space-x-6 text-2xl mb-12">
-            <a href="https://t.me/ваш_логин" class="text-blue-500 hover:text-white transition"><i class="fab fa-telegram"></i></a>
-            <a href="https://github.com/ваш_логин" class="text-slate-400 hover:text-white transition"><i class="fab fa-github"></i></a>
-            <a href="mailto:email@example.com" class="text-slate-400 hover:text-white transition"><i class="fas fa-envelope"></i></a>
-        </div>
-        <p class="text-xs text-slate-700">© 2026 Crafted with PHP logic and Tailwind styles.</p>
-    </footer>
+        </footer>
+    </div>
 
 </body>
 </html>
