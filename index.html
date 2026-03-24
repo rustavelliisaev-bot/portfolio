@@ -23,11 +23,10 @@
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
 
-        /* Анимация появления */
         .fade-in {
             opacity: 0;
             transform: translateY(40px);
-            transition: all 0.8s ease-out;
+            transition: all 0.9s ease-out;
         }
         
         .fade-in.visible {
@@ -36,7 +35,7 @@
         }
 
         .project-card {
-            transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .project-card:hover {
@@ -235,7 +234,7 @@
         © 2026 Rustam Isayev • Fullstack Engineer
     </footer>
 
-    <!-- Scroll Reveal Script -->
+    <!-- Scroll Animation Script -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
