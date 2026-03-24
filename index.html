@@ -1,339 +1,122 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullstack Engineer | Команда разработки</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-        
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        .title-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .hero-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-        }
-        .fade-in {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: all 0.9s ease-out;
-        }
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .project-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .project-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.3);
-        }
-        .skill-card {
-            transition: all 0.3s ease;
-        }
-        .skill-card:hover {
-            transform: translateY(-5px);
-        }
-    </style>
-</head>
-<body class="bg-slate-950 text-slate-200">
-
-    <!-- Hero -->
-    <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(at_center,#3b82f610_0%,transparent_70%)]"></div>
-        
-        <div class="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
-            <div class="flex flex-col md:flex-row items-center gap-16">
-                <div class="flex-1">
-                    <span class="inline-block px-5 py-2.5 rounded-3xl bg-blue-500/10 text-blue-400 text-sm font-medium mb-6 border border-blue-500/30 fade-in">
-                        Команда Fullstack Engineer • Доступны для новых проектов • 2026
-                    </span>
-                    
-                    <h1 class="text-6xl md:text-7xl font-black leading-none tracking-tighter title-font fade-in">
-                        Fullstack Engineer
-                    </h1>
-                    
-                    <p class="mt-8 text-xl text-slate-400 max-w-lg fade-in" style="transition-delay: 200ms">
-                        Команда опытных разработчиков с 10+ летним опытом создания высоконагруженных веб-систем, сложной backend-архитектуры и полноценных fullstack решений.
-                    </p>
-                    
-                    <div class="mt-12 flex flex-wrap gap-5 fade-in" style="transition-delay: 400ms">
-                        <a href="#contact" 
-                           class="bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-2xl font-semibold text-lg transition flex items-center gap-3">
-                            Обсудить проект
-                            <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <a href="#projects" 
-                           class="border border-slate-600 hover:border-slate-400 px-10 py-5 rounded-2xl font-semibold text-lg transition">
-                            Посмотреть работы
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="flex-1 flex justify-center fade-in" style="transition-delay: 300ms">
-                    <div class="relative">
-                        <div class="absolute -inset-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-[3rem] blur-3xl opacity-30"></div>
-                        <img src="https://via.placeholder.com/460x460/1e2937/64748b?text=Fullstack+Engineer" 
-                             alt="Fullstack Engineer Team"
-                             class="w-96 h-96 object-cover rounded-3xl shadow-2xl border-8 border-slate-800 relative z-10">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== РЕАЛИЗОВАННЫЕ ПРОЕКТЫ ==================== -->
-    <section id="projects" class="py-24 px-6 bg-slate-900">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-5xl font-bold text-center mb-4 fade-in">Реализованные проекты</h2>
-            <p class="text-center text-slate-400 mb-16 max-w-lg mx-auto fade-in" style="transition-delay: 200ms">
-                Высоконагруженные системы, сложные интеграции и современные веб-решения
-            </p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 100ms">
-                    <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-7xl">✈️</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Silk Avia</h3>
-                        <p class="text-slate-400 text-sm mb-4">Онлайн-платформа для бронирования авиабилетов и управления внутренними авиарейсами Узбекистана. Реализована система поиска рейсов, онлайн-регистрация и интеграция платежей.</p>
-                        <a href="https://www.silk-avia.com/uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 150ms">
-                    <div class="h-52 bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-7xl">🛢️</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Когалымнефтегеофизика</h3>
-                        <p class="text-slate-400 text-sm mb-4">Официальный сайт ведущей сервисной компании в области геофизических исследований для нефтегазовой отрасли.</p>
-                        <a href="https://kngf.org/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 200ms">
-                    <div class="h-52 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-7xl">💡</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Styllight</h3>
-                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин дизайнерского светодиодного освещения премиум-класса с удобным каталогом и фильтрами.</p>
-                        <a href="https://styllight.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 250ms">
-                    <div class="h-52 bg-gradient-to-br from-purple-600 to-violet-600 flex items-center justify-center text-7xl">⌚</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">TimeBit</h3>
-                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин оригинальных наручных часов люкс-сегмента с рассрочкой и клубными привилегиями.</p>
-                        <a href="https://timebit.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 300ms">
-                    <div class="h-52 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center text-7xl">🛋️</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Vosart</h3>
-                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин дизайнерской мягкой мебели премиум-класса от собственного производства.</p>
-                        <a href="https://vosart.com/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 350ms">
-                    <div class="h-52 bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center text-7xl">🕌</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Имом Термизий</h3>
-                        <p class="text-slate-400 text-sm mb-4">Официальный сайт исламского среднего специального образовательного учреждения в Термезе.</p>
-                        <a href="http://imomtermiziy.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 400ms">
-                    <div class="h-52 bg-gradient-to-br from-indigo-600 to-blue-600 flex items-center justify-center text-7xl">🏛️</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Ташкентский архитектурно-строительный университет</h3>
-                        <p class="text-slate-400 text-sm mb-4">Официальный сайт ведущего технического университета Узбекистана.</p>
-                        <a href="http://tsautb.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 450ms">
-                    <div class="h-52 bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center text-7xl">⚖️</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Сурхандарьинский областной юридический техникум</h3>
-                        <p class="text-slate-400 text-sm mb-4">Официальный сайт государственного юридического техникума.</p>
-                        <a href="https://sursl.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== КОМПЕТЕНЦИИ ==================== -->
-    <section id="skills" class="py-24 px-6 bg-slate-900">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-5xl font-bold text-center mb-4 fade-in">Наши компетенции</h2>
-            <p class="text-center text-slate-400 mb-16 max-w-md mx-auto fade-in" style="transition-delay: 200ms">
+<!-- ==================== НАШИ КОМПЕТЕНЦИИ (НОВАЯ ВЕРСИЯ) ==================== -->
+<section id="skills" class="py-28 px-6 bg-slate-950">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold tracking-tight title-font mb-3">Наши компетенции</h2>
+            <p class="text-xl text-slate-400 max-w-md mx-auto">
                 Полный цикл разработки и продвижения сложных веб-проектов
             </p>
+        </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-                <!-- Технические навыки -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1" style="transition-delay: 100ms">
-                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-code"></i> Технические навыки
-                    </h3>
-                    <div class="grid grid-cols-2 gap-x-8 gap-y-5 text-sm">
-                        <div>
-                            <p class="text-blue-400 font-medium mb-2">Backend</p>
-                            <ul class="space-y-2 text-slate-300">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> PHP 8.2+</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Laravel 10/11</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Symfony</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> REST & GraphQL API</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="text-blue-400 font-medium mb-2">Базы данных</p>
-                            <ul class="space-y-2 text-slate-300">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> PostgreSQL</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> MySQL / MariaDB</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Redis</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> MongoDB</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="text-blue-400 font-medium mb-2">DevOps</p>
-                            <ul class="space-y-2 text-slate-300">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Docker & Docker Compose</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> CI/CD (GitHub Actions)</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Linux / Ubuntu Server</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Nginx + Apache</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="text-blue-400 font-medium mb-2">Frontend</p>
-                            <ul class="space-y-2 text-slate-300">
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> HTML5, CSS3, Tailwind CSS</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> JavaScript / Alpine.js</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Livewire</li>
-                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Vue.js</li>
-                            </ul>
-                        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+
+            <!-- 1. Технические навыки -->
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-blue-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-blue-500/10 rounded-2xl flex items-center justify-center text-2xl">💻</div>
+                    <h3 class="text-2xl font-semibold text-blue-400">Технические навыки</h3>
+                </div>
+                <div class="space-y-8">
+                    <div>
+                        <p class="text-blue-400 font-medium mb-3">Backend</p>
+                        <ul class="space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> PHP 8.2+</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Laravel 10/11</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Symfony</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> REST & GraphQL API</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-blue-400 font-medium mb-3">Базы данных</p>
+                        <ul class="space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> PostgreSQL</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> MySQL / MariaDB</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Redis</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-blue-400 font-medium mb-3">DevOps & Frontend</p>
+                        <ul class="space-y-2 text-slate-300 text-sm">
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Docker • CI/CD • Linux</li>
+                            <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Tailwind • Alpine.js • Livewire • Vue.js</li>
+                        </ul>
                     </div>
                 </div>
+            </div>
 
-                <!-- UX/UI -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-violet-500/30 fade-in" style="transition-delay: 150ms">
-                    <h3 class="text-violet-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-palette"></i> UX/UI
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Дизайн пользовательских интерфейсов</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Прототипирование (Figma)</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> User Experience Research</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Адаптивный и мобильный дизайн</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Дизайн-системы и компоненты</li>
-                    </ul>
+            <!-- 2. UX/UI -->
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-violet-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-violet-500/10 rounded-2xl flex items-center justify-center text-2xl">🎨</div>
+                    <h3 class="text-2xl font-semibold text-violet-400">UX/UI</h3>
                 </div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Дизайн пользовательских интерфейсов</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Прототипирование в Figma</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> User Experience Research</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Адаптивный и мобильный дизайн</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Дизайн-системы и компоненты</li>
+                </ul>
+            </div>
 
-                <!-- Интеграции -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 200ms">
-                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-plug"></i> Интеграции
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> One-ID (Узбекистан)</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Payme, Click, UzCard</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Bot API</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Внешние API и сервисы</li>
-                    </ul>
+            <!-- 3. Интеграции -->
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-cyan-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-cyan-500/10 rounded-2xl flex items-center justify-center text-2xl">🔌</div>
+                    <h3 class="text-2xl font-semibold text-cyan-400">Интеграции</h3>
                 </div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> One-ID (Узбекистан)</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Payme, Click, UzCard</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Telegram Bot API</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Внешние API и сервисы</li>
+                </ul>
+            </div>
 
-                <!-- Бизнес-аналитика -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 250ms">
-                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-chart-bar"></i> Бизнес-аналитика
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Сбор и анализ требований</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Постановка задач разработчикам</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Моделирование бизнес-процессов</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Подготовка ТЗ и ТЭО</li>
-                    </ul>
+            <!-- 4. Бизнес-аналитика -->
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-amber-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-amber-500/10 rounded-2xl flex items-center justify-center text-2xl">📊</div>
+                    <h3 class="text-2xl font-semibold text-amber-400">Бизнес-аналитика</h3>
                 </div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Сбор и анализ требований</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Постановка задач разработчикам</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Моделирование бизнес-процессов</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Подготовка ТЗ и ТЭО</li>
+                </ul>
+            </div>
 
-                <!-- Маркетинг -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 300ms">
-                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-bullhorn"></i> Маркетинг
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Digital-маркетинг</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SEO / SEM</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Контент-маркетинг</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Анализ целевой аудитории</li>
-                    </ul>
+            <!-- 5. Маркетинг -->
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-lime-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-lime-500/10 rounded-2xl flex items-center justify-center text-2xl">📣</div>
+                    <h3 class="text-2xl font-semibold text-lime-400">Маркетинг</h3>
                 </div>
-
-                <!-- Рекламное сопровождение -->
-                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 350ms">
-                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-ad"></i> Рекламное сопровождение
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Яндекс.Директ и Google Ads</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Ads</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SMM и таргетированная реклама</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Аналитика эффективности рекламы</li>
-                    </ul>
-                </div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Digital-маркетинг</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> SEO / SEM</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Контент-маркетинг</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Анализ целевой аудитории</li>
+                </ul>
             </div>
         </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" class="py-28 px-6 bg-slate-950">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-5xl font-bold mb-6 fade-in">Давайте реализуем ваш проект вместе</h2>
-            <p class="text-xl text-slate-400 mb-12 fade-in" style="transition-delay: 200ms">
-                <strong>Ищем интересные и сложные задачи</strong> в сфере 
-                <strong>fullstack-разработки и архитектуры</strong>.
-            </p>
-            
-            <div class="flex flex-col sm:flex-row gap-6 justify-center fade-in" style="transition-delay: 400ms">
-                <a href="https://t.me/твой_логин" 
-                   class="bg-blue-600 hover:bg-blue-700 px-12 py-6 rounded-3xl text-xl font-semibold transition flex items-center justify-center gap-3">
-                    <i class="fab fa-telegram"></i> Написать в Telegram
-                </a>
-                <a href="mailto:ваш@email.com" 
-                   class="border-2 border-slate-600 hover:border-blue-500 px-12 py-6 rounded-3xl text-xl font-semibold transition">
-                    Написать на почту
-                </a>
+        <!-- Рекламное сопровождение (отдельная карточка снизу) -->
+        <div class="mt-8 max-w-md mx-auto">
+            <div class="skill-card group bg-gradient-to-br from-slate-900 to-slate-800 border border-slate-700 rounded-3xl p-8 hover:border-orange-500/50 transition-all duration-300">
+                <div class="flex items-center gap-3 mb-6">
+                    <div class="w-10 h-10 bg-orange-500/10 rounded-2xl flex items-center justify-center text-2xl">📢</div>
+                    <h3 class="text-2xl font-semibold text-orange-400">Рекламное сопровождение</h3>
+                </div>
+                <ul class="space-y-3 text-slate-300 text-sm">
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Яндекс.Директ и Google Ads</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Telegram Ads</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> SMM и таргетированная реклама</li>
+                    <li class="flex items-center gap-2"><span class="text-emerald-400">✓</span> Аналитика эффективности рекламы</li>
+                </ul>
             </div>
         </div>
-    </section>
-
-    <footer class="py-12 text-center text-slate-500 text-sm border-t border-slate-900">
-        © 2026 Fullstack Engineer • Команда профессиональной веб-разработки
-    </footer>
-
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, { threshold: 0.15 });
-        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    </script>
-</body>
-</html>
+    </div>
+</section>
