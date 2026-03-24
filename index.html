@@ -38,18 +38,11 @@
             transform: translateY(-12px);
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.4);
         }
-
-        .skill-card {
-            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .skill-card:hover {
-            transform: translateY(-8px);
-        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
 
-    <!-- Hero -->
+    <!-- 1. Hero -->
     <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(at_center,#3b82f610_0%,transparent_70%)]"></div>
         
@@ -86,20 +79,20 @@
         </div>
     </section>
 
-    <!-- Featured Project -->
+    <!-- 2. Большая карточка Silk Avia (как на скриншоте) -->
     <section class="py-20 bg-slate-900">
         <div class="max-w-6xl mx-auto px-6 flex justify-center">
-            <div class="project-card w-full max-w-md bg-gradient-to-br from-indigo-600 to-blue-600 rounded-3xl overflow-hidden">
-                <div class="h-64 flex items-center justify-center bg-gradient-to-br from-blue-500 to-indigo-500">
+            <div class="w-full max-w-md bg-gradient-to-br from-blue-600 to-indigo-600 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="h-64 bg-gradient-to-br from-blue-500 to-indigo-500 flex items-center justify-center">
                     <span class="text-9xl">✈️</span>
                 </div>
                 <div class="p-8 text-center">
                     <h3 class="text-2xl font-bold mb-3">Silk Avia</h3>
-                    <p class="text-slate-200 text-sm leading-relaxed">
+                    <p class="text-slate-200 text-sm leading-relaxed mb-6">
                         Современная платформа для бронирования авиабилетов и управления внутренними авиарейсами Узбекистана.
                     </p>
                     <a href="https://www.silk-avia.com/uz/" target="_blank" 
-                       class="mt-6 inline-flex items-center gap-2 text-sm font-medium hover:underline">
+                       class="inline-flex items-center gap-2 text-sm font-medium hover:underline">
                         Перейти на сайт <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
@@ -107,7 +100,7 @@
         </div>
     </section>
 
-    <!-- Реализованные проекты -->
+    <!-- 3. Все 8 проектов -->
     <section id="projects" class="py-24 px-6 bg-slate-900">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-5xl font-bold text-center mb-4 fade-in">Реализованные проекты</h2>
@@ -118,6 +111,7 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
 
+                <!-- 1 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 100ms">
                     <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-7xl">✈️</div>
                     <div class="p-6">
@@ -127,6 +121,7 @@
                     </div>
                 </div>
 
+                <!-- 2 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 150ms">
                     <div class="h-52 bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-7xl">🛢️</div>
                     <div class="p-6">
@@ -136,6 +131,7 @@
                     </div>
                 </div>
 
+                <!-- 3 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 200ms">
                     <div class="h-52 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-7xl">💡</div>
                     <div class="p-6">
@@ -145,6 +141,7 @@
                     </div>
                 </div>
 
+                <!-- 4 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 250ms">
                     <div class="h-52 bg-gradient-to-br from-purple-600 to-violet-600 flex items-center justify-center text-7xl">⌚</div>
                     <div class="p-6">
@@ -154,6 +151,7 @@
                     </div>
                 </div>
 
+                <!-- 5 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 300ms">
                     <div class="h-52 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center text-7xl">🛋️</div>
                     <div class="p-6">
@@ -163,6 +161,7 @@
                     </div>
                 </div>
 
+                <!-- 6 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 350ms">
                     <div class="h-52 bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center text-7xl">🕌</div>
                     <div class="p-6">
@@ -172,6 +171,7 @@
                     </div>
                 </div>
 
+                <!-- 7 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 400ms">
                     <div class="h-52 bg-gradient-to-br from-indigo-600 to-blue-600 flex items-center justify-center text-7xl">🏛️</div>
                     <div class="p-6">
@@ -181,6 +181,7 @@
                     </div>
                 </div>
 
+                <!-- 8 -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 450ms">
                     <div class="h-52 bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center text-7xl">⚖️</div>
                     <div class="p-6">
@@ -194,7 +195,7 @@
         </div>
     </section>
 
-    <!-- Наши компетенции -->
+    <!-- 4. Полная секция компетенций -->
     <section id="skills" class="py-24 px-6 bg-slate-950">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-5xl font-bold text-center mb-4 fade-in">Наши компетенции</h2>
@@ -213,7 +214,7 @@
                     <div class="space-y-6 text-sm">
                         <div>
                             <p class="text-blue-400 font-medium mb-2">Backend</p>
-                            <ul class="space-y-1.5 text-slate-300">
+                            <ul class="space-y-1 text-slate-300">
                                 <li>✓ PHP 8.2+</li>
                                 <li>✓ Laravel 10/11</li>
                                 <li>✓ Symfony</li>
@@ -225,7 +226,7 @@
                         </div>
                         <div>
                             <p class="text-blue-400 font-medium mb-2">Базы данных • DevOps • Frontend</p>
-                            <ul class="space-y-1.5 text-slate-300">
+                            <ul class="space-y-1 text-slate-300">
                                 <li>✓ PostgreSQL, MySQL, Redis, MongoDB</li>
                                 <li>✓ Docker, CI/CD, Linux, Nginx + Apache</li>
                                 <li>✓ Tailwind CSS, Alpine.js, Livewire, Vue.js</li>
@@ -318,12 +319,10 @@
                 <strong>fullstack-разработки и архитектуры</strong>.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center fade-in" style="transition-delay: 400ms">
-                <a href="https://t.me/твой_логин" 
-                   class="bg-blue-600 hover:bg-blue-700 px-12 py-6 rounded-3xl text-xl font-semibold transition flex items-center justify-center gap-3">
+                <a href="https://t.me/твой_логин" class="bg-blue-600 hover:bg-blue-700 px-12 py-6 rounded-3xl text-xl font-semibold transition flex items-center justify-center gap-3">
                     <i class="fab fa-telegram"></i> Написать в Telegram
                 </a>
-                <a href="mailto:ваш@email.com" 
-                   class="border-2 border-slate-600 hover:border-blue-500 px-12 py-6 rounded-3xl text-xl font-semibold transition">
+                <a href="mailto:ваш@email.com" class="border-2 border-slate-600 hover:border-blue-500 px-12 py-6 rounded-3xl text-xl font-semibold transition">
                     Написать на почту
                 </a>
             </div>
