@@ -42,6 +42,14 @@
             transform: translateY(-12px);
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.3);
         }
+
+        .skill-card {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body class="bg-slate-950 text-slate-200">
@@ -209,6 +217,121 @@
         </div>
     </section>
 
+    <!-- ==================== СЕКЦИЯ НАВЫКОВ ==================== -->
+    <section id="skills" class="py-24 px-6 bg-slate-900">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-4 fade-in">Мои компетенции</h2>
+            <p class="text-center text-slate-400 mb-16 max-w-md mx-auto fade-in" style="transition-delay: 200ms">
+                Технические и бизнес-навыки, которые я использую в проектах
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+
+                <!-- Backend -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 100ms">
+                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-server"></i> Backend
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> PHP 8.2+</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Laravel 10/11</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Symfony</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> REST & GraphQL API</li>
+                    </ul>
+                </div>
+
+                <!-- Базы данных -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 150ms">
+                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-database"></i> Базы данных
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> PostgreSQL</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> MySQL / MariaDB</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Redis</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> MongoDB</li>
+                    </ul>
+                </div>
+
+                <!-- DevOps -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 200ms">
+                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-cogs"></i> DevOps
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Docker & Docker Compose</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> CI/CD</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Linux Server</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Nginx</li>
+                    </ul>
+                </div>
+
+                <!-- Интеграции -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 250ms">
+                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-plug"></i> Интеграции
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> One-ID</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Payme, Click, UzCard</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Bot API</li>
+                    </ul>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 300ms">
+                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-mobile-alt"></i> Frontend
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Tailwind CSS</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> JavaScript / Alpine.js</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Livewire</li>
+                    </ul>
+                </div>
+
+                <!-- Бизнес-аналитика -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 350ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-chart-bar"></i> Бизнес-аналитика
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Сбор и анализ требований</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Постановка задач</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Моделирование процессов</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Подготовка ТЗ</li>
+                    </ul>
+                </div>
+
+                <!-- Маркетинг -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 400ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-bullhorn"></i> Маркетинг
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Digital-маркетинг</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SEO / SEM</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Контент-маркетинг</li>
+                    </ul>
+                </div>
+
+                <!-- Рекламное сопровождение -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 450ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-ad"></i> Рекламное сопровождение
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Яндекс.Директ, Google Ads</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Ads</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SMM и таргет</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Аналитика рекламы</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Contact -->
     <section id="contact" class="py-28 px-6 bg-slate-950">
         <div class="max-w-3xl mx-auto text-center">
@@ -242,9 +365,7 @@
                     entry.target.classList.add('visible');
                 }
             });
-        }, {
-            threshold: 0.15
-        });
+        }, { threshold: 0.15 });
 
         document.querySelectorAll('.fade-in').forEach(el => {
             observer.observe(el);
