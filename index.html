@@ -3,50 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rustam Isayev | Fullstack Engineer</title>
+    <title>Fullstack Engineer | Команда разработки</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
+        
         body {
             scroll-behavior: smooth;
             font-family: 'Inter', system_ui, sans-serif;
         }
-        
         .title-font {
             font-family: 'Space Grotesk', sans-serif;
         }
-
         .hero-bg {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
         }
-
         .fade-in {
             opacity: 0;
             transform: translateY(40px);
             transition: all 0.9s ease-out;
         }
-        
         .fade-in.visible {
             opacity: 1;
             transform: translateY(0);
         }
-
         .project-card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        
         .project-card:hover {
             transform: translateY(-12px);
             box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.3);
         }
-
         .skill-card {
             transition: all 0.3s ease;
         }
-        
         .skill-card:hover {
             transform: translateY(-5px);
         }
@@ -62,7 +54,7 @@
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="flex-1">
                     <span class="inline-block px-5 py-2.5 rounded-3xl bg-blue-500/10 text-blue-400 text-sm font-medium mb-6 border border-blue-500/30 fade-in">
-                        Доступен для новых проектов • 2026
+                        Команда Fullstack Engineer • Доступны для новых проектов • 2026
                     </span>
                     
                     <h1 class="text-6xl md:text-7xl font-black leading-none tracking-tighter title-font fade-in">
@@ -70,9 +62,9 @@
                     </h1>
                     
                     <p class="mt-8 text-xl text-slate-400 max-w-lg fade-in" style="transition-delay: 200ms">
-                        10+ лет опыта разработки высоконагруженных веб-систем, backend-архитектуры и полноценных fullstack решений.
+                        Команда опытных разработчиков с 10+ летним опытом создания высоконагруженных веб-систем, сложной backend-архитектуры и полноценных fullstack решений.
                     </p>
-
+                    
                     <div class="mt-12 flex flex-wrap gap-5 fade-in" style="transition-delay: 400ms">
                         <a href="#contact" 
                            class="bg-blue-600 hover:bg-blue-700 px-10 py-5 rounded-2xl font-semibold text-lg transition flex items-center gap-3">
@@ -85,13 +77,12 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Фото -->
+                
                 <div class="flex-1 flex justify-center fade-in" style="transition-delay: 300ms">
                     <div class="relative">
                         <div class="absolute -inset-8 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-[3rem] blur-3xl opacity-30"></div>
-                        <img src="https://via.placeholder.com/460x460" 
-                             alt="Rustam Isayev" 
+                        <img src="https://via.placeholder.com/460x460/1e2937/64748b?text=Fullstack+Engineer" 
+                             alt="Fullstack Engineer Team"
                              class="w-96 h-96 object-cover rounded-3xl shadow-2xl border-8 border-slate-800 relative z-10">
                     </div>
                 </div>
@@ -104,78 +95,157 @@
         <div class="max-w-6xl mx-auto">
             <h2 class="text-5xl font-bold text-center mb-4 fade-in">Реализованные проекты</h2>
             <p class="text-center text-slate-400 mb-16 max-w-lg mx-auto fade-in" style="transition-delay: 200ms">
-                Высоконагруженные системы, интеграции и сложные веб-решения
+                Высоконагруженные системы, сложные интеграции и современные веб-решения
             </p>
-
+            
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Здесь оставил все 8 проектов как было -->
+                <!-- Все 8 проектов с улучшенными описаниями -->
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 100ms">
-                    <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
-                        <span class="text-7xl">✈️</span>
-                    </div>
+                    <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-7xl">✈️</div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Silk Avia</h3>
-                        <p class="text-slate-400 text-sm mb-4">Система бронирования и управление авиаперевозками</p>
-                        <a href="https://www.silk-avia.com/uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
-                            Перейти <i class="fas fa-external-link-alt"></i>
-                        </a>
+                        <p class="text-slate-400 text-sm mb-4">Онлайн-платформа для бронирования авиабилетов и управления внутренними авиарейсами Узбекистана. Реализована система поиска рейсов, онлайн-регистрация и интеграция платежей.</p>
+                        <a href="https://www.silk-avia.com/uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
 
-                <!-- Остальные 7 проектов (My Logistic, Styllight, Timebit, KNGF, Imom Termiziy, TSAUTB, SURSL) -->
-                <!-- Я оставил их такими же, как в твоём последнем коде. Если нужно — могу показать все 8 полностью. -->
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 150ms">
+                    <div class="h-52 bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center text-7xl">🛢️</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Когалымнефтегеофизика</h3>
+                        <p class="text-slate-400 text-sm mb-4">Официальный сайт ведущей сервисной компании в области геофизических исследований для нефтегазовой отрасли.</p>
+                        <a href="https://kngf.org/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 200ms">
+                    <div class="h-52 bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-7xl">💡</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Styllight</h3>
+                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин дизайнерского светодиодного освещения премиум-класса с удобным каталогом и фильтрами.</p>
+                        <a href="https://styllight.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 250ms">
+                    <div class="h-52 bg-gradient-to-br from-purple-600 to-violet-600 flex items-center justify-center text-7xl">⌚</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TimeBit</h3>
+                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин оригинальных наручных часов люкс-сегмента с рассрочкой и клубными привилегиями.</p>
+                        <a href="https://timebit.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 300ms">
+                    <div class="h-52 bg-gradient-to-br from-rose-500 to-pink-600 flex items-center justify-center text-7xl">🛋️</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Vosart</h3>
+                        <p class="text-slate-400 text-sm mb-4">Интернет-магазин дизайнерской мягкой мебели премиум-класса от собственного производства.</p>
+                        <a href="https://vosart.com/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 350ms">
+                    <div class="h-52 bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center text-7xl">🕌</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Имом Термизий</h3>
+                        <p class="text-slate-400 text-sm mb-4">Официальный сайт исламского среднего специального образовательного учреждения.</p>
+                        <a href="http://imomtermiziy.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 400ms">
+                    <div class="h-52 bg-gradient-to-br from-indigo-600 to-blue-600 flex items-center justify-center text-7xl">🏛️</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ташкентский архитектурно-строительный университет</h3>
+                        <p class="text-slate-400 text-sm mb-4">Официальный сайт ведущего технического университета Узбекистана.</p>
+                        <a href="http://tsautb.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 450ms">
+                    <div class="h-52 bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center text-7xl">⚖️</div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Сурхандарьинский областной юридический техникум</h3>
+                        <p class="text-slate-400 text-sm mb-4">Официальный сайт государственного юридического техникума.</p>
+                        <a href="https://sursl.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ==================== НОВАЯ СЕКЦИЯ НАВЫКОВ ==================== -->
-    <section id="skills" class="py-24 px-6 bg-slate-950">
+    <!-- Competencies -->
+    <section id="skills" class="py-24 px-6 bg-slate-900">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-5xl font-bold text-center mb-4 fade-in">Технические навыки</h2>
+            <h2 class="text-5xl font-bold text-center mb-4 fade-in">Наши компетенции</h2>
             <p class="text-center text-slate-400 mb-16 max-w-md mx-auto fade-in" style="transition-delay: 200ms">
-                Инструменты и технологии, с которыми я работаю
+                Полный цикл разработки и продвижения сложных веб-проектов
             </p>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
 
-                <div class="skill-card bg-slate-900 rounded-3xl p-8 border border-slate-800 fade-in" style="transition-delay: 100ms">
+                <!-- Технические навыки -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1" style="transition-delay: 100ms">
                     <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-server"></i> Backend
+                        <i class="fas fa-code"></i> Технические навыки
+                    </h3>
+                    <div class="grid grid-cols-2 gap-x-8 gap-y-5 text-sm">
+                        <div>
+                            <p class="text-blue-400 font-medium mb-2">Backend</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> PHP 8.2+</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Laravel 10/11</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Symfony</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> REST & GraphQL API</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-blue-400 font-medium mb-2">Базы данных</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> PostgreSQL</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> MySQL / MariaDB</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Redis</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> MongoDB</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-blue-400 font-medium mb-2">DevOps</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Docker & Docker Compose</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> CI/CD (GitHub Actions)</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Linux / Ubuntu Server</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Nginx + Apache</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-blue-400 font-medium mb-2">Frontend</p>
+                            <ul class="space-y-2 text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> HTML5, CSS3, Tailwind CSS</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> JavaScript / Alpine.js</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Livewire</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-check text-emerald-500 text-xs"></i> Vue.js</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UX/UI -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-violet-500/30 fade-in" style="transition-delay: 150ms">
+                    <h3 class="text-violet-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-palette"></i> UX/UI
                     </h3>
                     <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> PHP 8.2+</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Laravel 10/11</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Symfony</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> REST API & GraphQL</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Дизайн пользовательских интерфейсов</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Прототипирование (Figma)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> User Experience Research</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Адаптивный и мобильный дизайн</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Дизайн-системы и компоненты</li>
                     </ul>
                 </div>
 
-                <div class="skill-card bg-slate-900 rounded-3xl p-8 border border-slate-800 fade-in" style="transition-delay: 200ms">
-                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-database"></i> Базы данных
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> PostgreSQL</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> MySQL / MariaDB</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Redis</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> MongoDB</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card bg-slate-900 rounded-3xl p-8 border border-slate-800 fade-in" style="transition-delay: 300ms">
-                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-cogs"></i> DevOps & Инструменты
-                    </h3>
-                    <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Docker & Docker Compose</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Git & CI/CD</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Linux / Ubuntu</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Nginx + Apache</li>
-                    </ul>
-                </div>
-
-                <div class="skill-card bg-slate-900 rounded-3xl p-8 border border-slate-800 fade-in" style="transition-delay: 400ms">
+                <!-- Интеграции -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in" style="transition-delay: 200ms">
                     <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
                         <i class="fas fa-plug"></i> Интеграции
                     </h3>
@@ -183,22 +253,48 @@
                         <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> One-ID (Узбекистан)</li>
                         <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Payme, Click, UzCard</li>
                         <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Bot API</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> External APIs</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Внешние API и сервисы</li>
                     </ul>
                 </div>
 
-                <div class="skill-card bg-slate-900 rounded-3xl p-8 border border-slate-800 fade-in" style="transition-delay: 500ms">
-                    <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
-                        <i class="fas fa-mobile-alt"></i> Frontend
+                <!-- Бизнес-аналитика -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 250ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-chart-bar"></i> Бизнес-аналитика
                     </h3>
                     <ul class="space-y-4 text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> HTML5, CSS3, Tailwind</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> JavaScript / Alpine.js</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Livewire</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Vue.js (базовый)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Сбор и анализ требований</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Постановка задач разработчикам</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Моделирование бизнес-процессов</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Подготовка ТЗ и ТЭО</li>
                     </ul>
                 </div>
 
+                <!-- Маркетинг -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 300ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-bullhorn"></i> Маркетинг
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Digital-маркетинг</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SEO / SEM</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Контент-маркетинг</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Анализ целевой аудитории</li>
+                    </ul>
+                </div>
+
+                <!-- Рекламное сопровождение -->
+                <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-amber-500/20 fade-in" style="transition-delay: 350ms">
+                    <h3 class="text-amber-400 text-xl font-semibold mb-6 flex items-center gap-3">
+                        <i class="fas fa-ad"></i> Рекламное сопровождение
+                    </h3>
+                    <ul class="space-y-4 text-slate-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Яндекс.Директ и Google Ads</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Telegram Ads</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> SMM и таргетированная реклама</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-emerald-500"></i> Аналитика эффективности рекламы</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -208,7 +304,8 @@
         <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-5xl font-bold mb-6 fade-in">Давайте реализуем ваш проект вместе</h2>
             <p class="text-xl text-slate-400 mb-12 fade-in" style="transition-delay: 200ms">
-                Ищу интересные и сложные задачи в сфере fullstack-разработки и архитектуры.
+                <strong>Ищем интересные и сложные задачи</strong> в сфере 
+                <strong>fullstack-разработки и архитектуры</strong>.
             </p>
             
             <div class="flex flex-col sm:flex-row gap-6 justify-center fade-in" style="transition-delay: 400ms">
@@ -225,10 +322,10 @@
     </section>
 
     <footer class="py-12 text-center text-slate-500 text-sm border-t border-slate-900">
-        © 2026 Rustam Isayev • Fullstack Engineer
+        © 2026 Fullstack Engineer • Команда профессиональной веб-разработки
     </footer>
 
-    <!-- Scroll Animation -->
+    <!-- Animation Script -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -238,9 +335,7 @@
             });
         }, { threshold: 0.15 });
 
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
