@@ -90,7 +90,7 @@
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- ==================== РЕАЛИЗОВАННЫЕ ПРОЕКТЫ ==================== -->
     <section id="projects" class="py-24 px-6 bg-slate-900">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-5xl font-bold text-center mb-4 fade-in">Реализованные проекты</h2>
@@ -99,7 +99,7 @@
             </p>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Все 8 проектов с улучшенными описаниями -->
+
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 100ms">
                     <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-7xl">✈️</div>
                     <div class="p-6">
@@ -149,7 +149,7 @@
                     <div class="h-52 bg-gradient-to-br from-cyan-600 to-blue-700 flex items-center justify-center text-7xl">🕌</div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Имом Термизий</h3>
-                        <p class="text-slate-400 text-sm mb-4">Официальный сайт исламского среднего специального образовательного учреждения.</p>
+                        <p class="text-slate-400 text-sm mb-4">Официальный сайт исламского среднего специального образовательного учреждения в Термезе.</p>
                         <a href="http://imomtermiziy.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -171,11 +171,12 @@
                         <a href="https://sursl.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">Перейти <i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Competencies -->
+    <!-- ==================== КОМПЕТЕНЦИИ ==================== -->
     <section id="skills" class="py-24 px-6 bg-slate-900">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-5xl font-bold text-center mb-4 fade-in">Наши компетенции</h2>
@@ -184,7 +185,6 @@
             </p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-
                 <!-- Технические навыки -->
                 <div class="skill-card bg-slate-800 rounded-3xl p-8 border border-slate-700 fade-in col-span-1 md:col-span-2 lg:col-span-1 xl:col-span-1" style="transition-delay: 100ms">
                     <h3 class="text-blue-400 text-xl font-semibold mb-6 flex items-center gap-3">
@@ -325,7 +325,6 @@
         © 2026 Fullstack Engineer • Команда профессиональной веб-разработки
     </footer>
 
-    <!-- Animation Script -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -334,7 +333,6 @@
                 }
             });
         }, { threshold: 0.15 });
-
         document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
     </script>
 </body>
