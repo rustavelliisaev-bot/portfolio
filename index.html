@@ -13,9 +13,8 @@
         body {
             scroll-behavior: smooth;
             font-family: 'Inter', system_ui, sans-serif;
-            background: #0a0a0a;
         }
-
+        
         .title-font {
             font-family: 'Space Grotesk', sans-serif;
         }
@@ -27,7 +26,7 @@
         .fade-in {
             opacity: 0;
             transform: translateY(50px);
-            transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+            transition: all 0.9s cubic-bezier(0.25, 0.1, 0.25, 1);
         }
         
         .fade-in.visible {
@@ -54,10 +53,10 @@
         <div class="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
             <div class="flex flex-col md:flex-row items-center gap-16">
                 <div class="flex-1">
-                    <span class="inline-block px-6 py-3 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 text-sm font-medium mb-8 fade-in">
+                    <span class="inline-block px-5 py-2.5 rounded-3xl bg-blue-500/10 text-blue-400 text-sm font-medium mb-6 border border-blue-500/30 fade-in">
                         Команда Fullstack Engineer • Доступны для новых проектов • 2026
                     </span>
-
+                    
                     <!-- Красивый логотип -->
                     <h1 class="text-7xl md:text-8xl font-black leading-none tracking-[-4px] title-font fade-in flex items-center gap-4">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400">FULL</span>
@@ -104,11 +103,11 @@
             </p>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                <!-- Здесь твои 8 проектов (оставил как было в твоём последнем коде) -->
-                <!-- Для экономии места показал только один. Все остальные такие же. -->
 
                 <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 100ms">
-                    <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-7xl">✈️</div>
+                    <div class="h-52 bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center">
+                        <span class="text-7xl">✈️</span>
+                    </div>
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2">Silk Avia</h3>
                         <p class="text-slate-400 text-sm mb-4">Система бронирования и управление авиаперевозками</p>
@@ -118,7 +117,96 @@
                     </div>
                 </div>
 
-                <!-- Повтори аналогично для остальных 7 проектов -->
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 150ms">
+                    <div class="h-52 bg-gradient-to-br from-emerald-600 to-teal-600 flex items-center justify-center">
+                        <span class="text-7xl">📦</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">My Logistic</h3>
+                        <p class="text-slate-400 text-sm mb-4">Платформа управления логистикой и грузоперевозками</p>
+                        <a href="https://mylogistic.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 200ms">
+                    <div class="h-52 bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center">
+                        <span class="text-7xl">🛍️</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Styllight</h3>
+                        <p class="text-slate-400 text-sm mb-4">Современный интернет-магазин с умной фильтрацией</p>
+                        <a href="https://styllight.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 250ms">
+                    <div class="h-52 bg-gradient-to-br from-orange-600 to-amber-600 flex items-center justify-center">
+                        <span class="text-7xl">⌚</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Timebit</h3>
+                        <p class="text-slate-400 text-sm mb-4">Ритейл-платформа электроники и аксессуаров</p>
+                        <a href="https://timebit.ru/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 300ms">
+                    <div class="h-52 bg-gradient-to-br from-cyan-600 to-teal-600 flex items-center justify-center">
+                        <span class="text-7xl">🌍</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">KNGF.org</h3>
+                        <p class="text-slate-400 text-sm mb-4">Международный благотворительный фонд</p>
+                        <a href="https://kngf.org/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 350ms">
+                    <div class="h-52 bg-gradient-to-br from-amber-600 to-yellow-600 flex items-center justify-center">
+                        <span class="text-7xl">🕌</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Imom Termiziy</h3>
+                        <p class="text-slate-400 text-sm mb-4">Научно-исследовательский центр</p>
+                        <a href="http://imomtermiziy.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 400ms">
+                    <div class="h-52 bg-gradient-to-br from-red-600 to-rose-600 flex items-center justify-center">
+                        <span class="text-7xl">🛡️</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TSAUTB</h3>
+                        <p class="text-slate-400 text-sm mb-4">Система обеспечения транспортной безопасности</p>
+                        <a href="http://tsautb.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card bg-slate-800 rounded-3xl overflow-hidden fade-in" style="transition-delay: 450ms">
+                    <div class="h-52 bg-gradient-to-br from-lime-600 to-green-600 flex items-center justify-center">
+                        <span class="text-7xl">🧵</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">SURSL.uz</h3>
+                        <p class="text-slate-400 text-sm mb-4">Союз ремесленников и народных мастеров</p>
+                        <a href="https://sursl.uz/" target="_blank" class="text-blue-400 text-sm font-medium hover:underline flex items-center gap-2">
+                            Перейти <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -149,7 +237,7 @@
         © 2026 Rustam Isayev • Fullstack Engineer
     </footer>
 
-    <!-- Анимация при прокрутке -->
+    <!-- Scroll Animation -->
     <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
