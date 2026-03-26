@@ -1,43 +1,172 @@
-<!-- Улучшенный Hero 2026 -->
-<section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
-    <div class="absolute inset-0 bg-[radial-gradient(at_center,#3b82f620_0%,transparent_60%)]"></div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rustam Isayev | Fullstack Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
-    <div class="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
-        <div class="flex flex-col md:flex-row items-center gap-20">
-            <div class="flex-1">
-                <span class="inline-flex items-center gap-2 px-6 py-3 rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 text-sm font-medium mb-8 fade-in">
-                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                    Доступны для новых проектов • 2026
-                </span>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
-                <h1 class="text-7xl md:text-8xl font-black leading-none tracking-[-4px] title-font fade-in">
-                    FULL<span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-400">STACK</span>
-                </h1>
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Inter', system_ui, sans-serif;
+            background: #0a0a0a;
+            overflow-x: hidden;
+        }
 
-                <p class="mt-10 text-2xl text-slate-300 max-w-xl fade-in" style="transition-delay: 200ms">
-                    Команда профессионалов, создающая мощные и красивые цифровые продукты.
-                </p>
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
 
-                <div class="mt-14 flex flex-wrap gap-5 fade-in" style="transition-delay: 400ms">
-                    <a href="#contact" class="group bg-white text-slate-950 hover:bg-cyan-400 hover:text-slate-950 px-10 py-6 rounded-2xl font-semibold text-lg transition-all duration-300 flex items-center gap-3">
-                        Обсудить проект
-                        <span class="group-hover:translate-x-1 transition">→</span>
-                    </a>
-                    <a href="#projects" class="border border-white/30 hover:border-white/60 px-10 py-6 rounded-2xl font-semibold text-lg transition">
-                        Наши работы
-                    </a>
+        /* Шум на фоне */
+        .noise-bg {
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,0.03) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(255,255,255,0.02) 0%, transparent 50%);
+            background-size: 200% 200%;
+            animation: noise 8s linear infinite;
+        }
+
+        @keyframes noise {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 100%; }
+        }
+
+        /* Неоновый курсор */
+        .custom-cursor {
+            position: fixed;
+            width: 24px;
+            height: 24px;
+            border: 2px solid rgba(103, 232, 249, 0.8);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: transform 0.1s ease;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            .custom-cursor {
+                display: block;
+            }
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-card {
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 60px -15px rgb(103 232 249 / 0.2);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 noise-bg">
+
+    <!-- Неоновый курсор -->
+    <div class="custom-cursor" id="cursor"></div>
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen flex items-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(at_center,#67e8f920_0%,transparent_70%)]"></div>
+        
+        <div class="max-w-6xl mx-auto px-6 pt-20 pb-24 relative z-10">
+            <div class="flex flex-col md:flex-row items-center gap-20">
+                <div class="flex-1">
+                    <span class="inline-block px-6 py-3 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 text-sm font-medium mb-10 fade-in">
+                        Команда Fullstack Engineer • 2026
+                    </span>
+
+                    <!-- Красивый логотип -->
+                    <h1 class="text-7xl md:text-8xl font-black leading-none tracking-[-4px] title-font fade-in flex items-center gap-4">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-violet-400">FULL</span>
+                        <span class="text-white">STACK</span>
+                        <span class="text-cyan-400 text-6xl">⚡</span>
+                    </h1>
+
+                    <p class="mt-10 text-2xl text-slate-300 max-w-xl fade-in" style="transition-delay: 300ms">
+                        Команда опытных разработчиков, создающая мощные и современные цифровые продукты.
+                    </p>
+
+                    <div class="mt-14 flex flex-wrap gap-6 fade-in" style="transition-delay: 500ms">
+                        <a href="#contact" 
+                           class="bg-white text-slate-950 hover:bg-cyan-300 px-10 py-6 rounded-2xl font-semibold text-xl transition-all duration-300 flex items-center gap-3">
+                            Обсудить проект
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" 
+                           class="border-2 border-white/30 hover:border-white px-10 py-6 rounded-2xl font-semibold text-xl transition">
+                            Наши работы
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Правая часть с фото -->
-            <div class="flex-1">
-                <div class="relative">
-                    <div class="absolute -inset-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-[4rem] blur-3xl opacity-40"></div>
-                    <img src="https://via.placeholder.com/520x520" 
-                         alt="Fullstack Engineer Team"
-                         class="w-full rounded-3xl shadow-2xl border border-white/10 relative z-10">
+                <!-- Правая часть -->
+                <div class="flex-1 flex justify-center">
+                    <div class="relative w-full max-w-lg">
+                        <div class="absolute -inset-12 bg-gradient-to-br from-cyan-400 to-blue-600 rounded-[4rem] blur-3xl opacity-40"></div>
+                        <img src="https://via.placeholder.com/520x520" 
+                             alt="Fullstack Engineer Team"
+                             class="w-full rounded-3xl shadow-2xl border border-white/10 relative z-10">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Projects, Skills, Contact и остальной код оставил как было у тебя -->
+    <!-- (Чтобы не делать сообщение слишком длинным, я показал только Hero. Если нужно — могу дать весь файл полностью) -->
+
+    <!-- Неоновый курсор скрипт -->
+    <script>
+        const cursor = document.getElementById('cursor');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Плавное увеличение при наведении на кликабельные элементы
+        document.querySelectorAll('a, button').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'scale(1.8)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'scale(1)';
+            });
+        });
+
+        // Анимация появления
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
